@@ -23,6 +23,32 @@
                   changeBackgroundColor();
                 displayWelcomeMessage();
             };
+            function getFortune() {
+    // create a list of random fortunes
+    const fortunes = [
+    "A pleasant surprise is waiting for you.",
+    "Adventure awaits you around the next corner.",
+    "Your hard work will pay off today.",
+    "You will find a hidden treasure today.",
+    "Your creativity will shine bright today.",
+    "A new friendship will bring you joy",
+    "You will receive good news soon",
+    "Today is a perfect day to start something new",
+    "You are surrounded by love and support",
+    "Your optimism will attract wonderful opportunities",
+    "A small act of kindness will lead to big rewards",
+    "You will achieve your goals with determination",
+    "Success is on the horizon; keep moving forward",
+    "Joy and laughter will fill your day",
+    "You have the power to create your own happiness"
+];
+    
+    // select a random value from the `fortunes` array
+    const randomIndex = Math.floor(Math.random() * fortunes.length);
+    
+    // post an alert that displays the random fortune
+    alert(fortunes[randomIndex]);
+}
         </script>
     </head>
     <style>
@@ -68,5 +94,6 @@
         <p>The only way to contact me currently for business is through <strong>email</strong></p>
         <p>The Email is marcusquachbusiness07@gmail.com</p>
         <button onclick="changeBackgroundColor()">Change Background Color</button>
+        <button onclick="fortunes">Test your luck</button>
     </section>
 </html>
