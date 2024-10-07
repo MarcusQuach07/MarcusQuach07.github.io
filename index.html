@@ -49,6 +49,24 @@
     // post an alert that displays the random fortune
     alert(fortunes[randomIndex]);
 }
+
+function getskubiddy() {
+    // create a list of random skubiddy
+    const skubiddy = [
+    "Your skibiddy moves will inspire everyone around you.",
+    "Your rizz will open doors to amazing new friendships.",
+    "A quirky idea will lead to your next big success.",
+    "You’ll dance your way into a joyful adventure today.",
+    "Prepare for a snack that fuels your creativity!",
+    "A catastrophic mishap will leave you with a week’s worth of regret."
+];
+    
+    // select a random value from the `skubiddy` array
+    const randomIndex = Math.floor(Math.random() * skubiddy.length);
+    
+    // post an alert that displays the random skubiddy
+    alert(skubiddy[randomIndex]);
+}
         </script>
     </head>
     <style>
@@ -95,5 +113,6 @@
         <p>The Email is marcusquachbusiness07@gmail.com</p>
         <button onclick="changeBackgroundColor()">Change Background Color</button>
         <button onclick="getFortune()">Test your luck</button>
+        <button onclick="getskubiddy()">Please dont click</button>
     </section>
 </html>
